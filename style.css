@@ -82,14 +82,37 @@ body {
 }
 
 /* =========================
-   Hero Section
+   Hero Section (Image Background)
 ========================= */
 
 .hero {
-    background: linear-gradient(120deg, #0F4C81, #1F6FAF);
+    min-height: 100vh;
+    background-image: url("hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: #FFFFFF;
-    padding: 90px 0;
     text-align: center;
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Keep content above overlay */
+.hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
