@@ -1,181 +1,81 @@
-/* =========================
-   Home / Global Styles
-   ========================= */
-
-/* Page background */
+/* General page styling */
 body {
-    background-color: #f2f6f9;
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Centered content container */
+body > * {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Main heading */
 h1 {
-    color: #1f4aa8; /* deep blue */
+    color: #1a4fd8;
+    margin-bottom: 5px;
 }
 
-/* Introduction paragraph */
+/* Intro paragraph */
 p {
     font-size: 16px;
-    color: #333333; /* dark grey */
     line-height: 1.6;
 }
 
-/* Navigation menu */
-ul {
-    background-color: #dbe7ff; /* light blue */
+/* Navigation bar */
+nav {
+    background-color: #dbe7ff;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
     padding: 10px;
-    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
-ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-ul li a {
-    color: #0b3c5d; /* navy */
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: #003399;
 }
 
-ul li a:hover {
-    color: #e63946; /* red on hover */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Section heading */
 h2 {
-    color: #2a7f62; /* green */
+    color: #1a7f37;
+    margin-top: 40px;
 }
 
 /* Skills list */
-h2 + ul {
-    color: #444444;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Horizontal line */
+ul li {
+    background-color: #dbe7ff;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Horizontal rule */
 hr {
-    border: 1px solid #cccccc;
-}
-
-/* =========================
-   About Page Specific Styles
-   ========================= */
-.about-body {
-    background-color: #fff8f0;   /* warm cream */
-    font-family: Georgia, serif;
-    color: #2d2d2d;
-}
-
-.about-title {
-    color: #8b0000;  /* dark red */
-}
-
-.about-paragraph {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #4b4b4b;
-}
-
-.about-link {
-    color: #005f73; /* teal */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.about-link:hover {
-    color: #ca6702; /* orange on hover */
-}
-
-.about-ul {
-    background-color: #fde2e4; /* light pink */
-    padding: 10px;
-    list-style-type: square;
-}
-
-.about-ol {
-    background-color: #e9f5db; /* light green */
-    padding: 10px;
-}
-
-.about-dl {
-    background-color: #e0fbfc; /* light cyan */
-    padding: 10px;
-}
-
-.about-dt {
-    font-weight: bold;
-    color: #1d3557; /* navy */
-}
-
-.about-dd {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.about-ul li a {
-    color: #6a040f;
-}
-
-/* =========================
-   Contact Page Specific Styles
-   ========================= */
-.contact-body {
-    background-color: #f1faee;   /* very light green */
-    font-family: Verdana, sans-serif;
-    color: #2b2b2b;
-}
-
-.contact-title {
-    color: #1d3557;  /* dark blue */
-}
-
-.contact-subtitle {
-    color: #457b9d;  /* steel blue */
-}
-
-.contact-paragraph {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #333333;
-}
-
-.contact-hr {
-    border: 1px solid #a8dadc;
-}
-
-.contact-form {
-    background-color: #e9f5f2; /* light mint */
-    padding: 15px;
-    width: 320px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 6px;
-    margin-top: 5px;
-    border: 1px solid #bdbdbd;
-}
-
-.contact-form input[type="submit"] {
-    background-color: #2a9d8f; /* teal */
-    color: white;
     border: none;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.contact-form input[type="submit"]:hover {
-    background-color: #21867a;
-}
-
-.contact-link {
-    color: #e76f51; /* soft orange */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    color: #c44536;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px 0;
 }
