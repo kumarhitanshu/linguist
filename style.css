@@ -82,12 +82,25 @@ body {
 }
 
 /* =========================
-   Hero Section (Image Background)
+   Hero Section (FIXED FOR SERVER)
 ========================= */
 
 .hero {
+    min-height: 100svh; /* Modern viewport fix */
     min-height: 100vh;
-    background-image: url("hero-bg.jpg");
+
+    /* Fallback gradient if image fails */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/images/hero-bg.jpg");
+
+    /* High compatibility image loading */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        image-set(
+            url("/images/hero-bg.jpg") type("image/jpeg")
+        );
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,15 +114,7 @@ body {
     position: relative;
 }
 
-/* Dark overlay for readability */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-}
-
-/* Keep content above overlay */
+/* Keep content above background */
 .hero .container {
     position: relative;
     z-index: 1;
