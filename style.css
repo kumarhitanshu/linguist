@@ -74,7 +74,6 @@ body {
     color: #FFFFFF !important;
     padding: 8px 16px;
     border-radius: 4px;
-    border-bottom: none !important;
 }
 
 .btn-nav:hover {
@@ -82,24 +81,15 @@ body {
 }
 
 /* =========================
-   Hero Section (FIXED FOR SERVER)
+   Hero Section (FIXED & STABLE)
 ========================= */
 
 .hero {
-    min-height: 100svh; /* Modern viewport fix */
     min-height: 100vh;
 
-    /* Fallback gradient if image fails */
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("/images/hero-bg.jpg");
-
-    /* High compatibility image loading */
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        image-set(
-            url("/images/hero-bg.jpg") type("image/jpeg")
-        );
+        url("images/hero-bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -111,10 +101,9 @@ body {
 
     color: #FFFFFF;
     text-align: center;
-    position: relative;
 }
 
-/* Keep content above background */
+/* Hero content stays above background */
 .hero .container {
     position: relative;
     z-index: 1;
