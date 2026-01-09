@@ -1,46 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Kumar Language Services</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kumar Language Services</title>
+    <meta name="description" content="About Kumar Language Services – professional translation, editing, proofreading, and linguistic solutions.">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
+<header class="navbar">
     <div class="container nav-container">
-      <div class="logo">Kumar Language Services</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
-      </ul>
+        <div class="logo">
+            <i class="fa-solid fa-language"></i>
+            Kumar Language Services
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
+            <li><a class="active" href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
+            <li><a href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
+            <li><a class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
+        </ul>
     </div>
-  </nav>
 </header>
 
 <main>
-<section>
-  <div class="container">
-    <h2 class="section-title">About Us</h2>
-    <p class="section-text">
-      Kumar Language Services provides high-quality language solutions
-      with a focus on precision, professionalism, and confidentiality.
-      We support businesses, researchers, and individuals with reliable
-      linguistic expertise.
-    </p>
-  </div>
+
+<section class="page-hero hero-gradient">
+    <div class="container hero-content">
+        <h1>About Us</h1>
+        <p class="hero-description">
+            Delivering accurate, ethical, and professionally crafted language solutions.
+        </p>
+    </div>
 </section>
+
+<section class="about-section soft-bg">
+    <div class="container about-split">
+
+        <div class="about-left">
+            <h2>
+                <i class="fa-solid fa-circle-info service-icon"></i>
+                Who We Are
+            </h2>
+            <p>
+                Kumar Language Services is a professional language service provider offering
+                high-quality translation, editing, proofreading, linguistic analysis, and
+                content development services. We support academic, institutional, and
+                professional communication with precision, clarity, and confidentiality.
+            </p>
+            <p>
+                Our work is guided by linguistic expertise, ethical practices, and a strong
+                commitment to accuracy across languages and domains.
+            </p>
+        </div>
+
+        <div class="about-right">
+            <h2>
+                <i class="fa-solid fa-bullseye service-icon"></i>
+                Our Commitment
+            </h2>
+            <ul>
+                <li>Accuracy and linguistic integrity</li>
+                <li>Confidential handling of all materials</li>
+                <li>Clear and professional communication</li>
+                <li>Timely and reliable delivery</li>
+		<li>Cultural and contextual accuracy</li>
+		<li>Domain-specific language expertise</li>
+		<li>Client-focused, tailored solutions</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>© 2025 Kumar Language Services</p>
-  </div>
+    <div class="container">
+        © 2026 Kumar Language Services. All rights reserved.
+    </div>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/91XXXXXXXXXX"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
