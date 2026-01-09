@@ -1,44 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Kumar Language Services</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kumar Language Services</title>
+    <meta name="description" content="Contact Kumar Language Services for professional translation, editing, proofreading, and linguistic services.">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
+<header class="navbar">
     <div class="container nav-container">
-      <div class="logo">Kumar Language Services</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active btn-nav">Get a Quote</a></li>
-      </ul>
+        <div class="logo">
+            <i class="fa-solid fa-language"></i>
+            Kumar Language Services
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
+          <li><a href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
+          <li><a class="active" class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
+        </ul>
     </div>
-  </nav>
 </header>
 
 <main>
-<section>
-  <div class="container">
-    <h2 class="section-title">Contact Us</h2>
-    <p class="section-text">
-      Email: <strong>info@example.com</strong><br>
-      Phone: <strong>+91-XXXXXXXXXX</strong>
-    </p>
-  </div>
+
+<section class="page-hero hero-gradient">
+    <div class="container hero-content">
+        <h1>Contact Us</h1>
+        <p class="hero-description">
+            Share your project details and receive a professional response within one business day.
+        </p>
+    </div>
 </section>
+
+<section class="contact-section soft-bg">
+    <div class="container contact-grid">
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+            <h2>
+                <i class="fa-solid fa-address-card service-icon"></i>
+                Reach Us
+            </h2>
+            <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</p>
+            <p class="contact-note">
+                All submissions are handled with strict confidentiality.
+            </p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-box">
+            <h2>
+                <i class="fa-solid fa-file-signature service-icon"></i>
+                Project Inquiry
+            </h2>
+
+            <form class="contact-form"
+                  action="https://formsubmit.co/krhitanshu@rediffmail.com"
+                  method="POST"
+                  enctype="multipart/form-data">
+
+                <!-- REQUIRED CONFIG -->
+                <input type="hidden" name="_subject" value="New Project Inquiry – Kumar Language Services">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Service Required *</label>
+                    <select name="service" required>
+                        <option value="">Select Service</option>
+                        <option>Translation</option>
+                        <option>Editing & Proofreading</option>
+                        <option>Linguistic Analysis</option>
+                        <option>Content Development</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Details *</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Attach File (optional)</label>
+                    <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-glow btn-submit">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <p>© 2025 Kumar Language Services</p>
-  </div>
+    <div class="container">
+        © 2026 Kumar Language Services. All rights reserved.
+    </div>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/91XXXXXXXXXX"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
