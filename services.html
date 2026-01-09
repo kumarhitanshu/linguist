@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Kumar Language Services</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Kumar Language Services</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo">Kumar Language Services</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
-      </ul>
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><i class="fa-solid fa-language"></i> Kumar Language Services</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
-  </nav>
+
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
+      <li><a class="active" href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
+      <li><a class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
+    </ul>
+  </div>
 </header>
 
-<main>
-<section>
+<section class="page-hero hero-gradient">
+  <div class="container hero-content">
+    <h1>Our Services</h1>
+    <p class="hero-description">Professional language solutions tailored to your needs.</p>
+  </div>
+</section>
+
+<section class="services-section soft-bg">
   <div class="container">
-    <h2 class="section-title">Our Services</h2>
     <div class="service-grid">
-      <div class="service-card">Translation Services</div>
-      <div class="service-card">Editing & Proofreading</div>
-      <div class="service-card">Language Analysis</div>
-      <div class="service-card">Content Development</div>
+      <div class="service-card"><i class="fa fa-language service-icon"></i><h3>Translation</h3></div>
+      <div class="service-card"><i class="fa fa-pen service-icon"></i><h3>Editing & Proofreading</h3></div>
+      <div class="service-card"><i class="fa fa-magnifying-glass service-icon"></i><h3>Linguistic Analysis</h3></div>
+      <div class="service-card"><i class="fa fa-file-lines service-icon"></i><h3>Content Development</h3></div>
     </div>
   </div>
 </section>
-</main>
 
-<footer class="footer">
-  <div class="container">
-    <p>© 2025 Kumar Language Services</p>
-  </div>
-</footer>
+<footer class="footer">© 2026 Kumar Language Services</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function toggleMenu(){document.querySelector('.nav-links').classList.toggle('open');}
+</script>
 
 </body>
 </html>
