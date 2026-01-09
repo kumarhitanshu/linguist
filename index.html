@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kumar Language Services | Professional Language Service Provider</title>
+<meta name="description" content="Professional translation, editing, proofreading and linguistic services.">
 
-  <title>Kumar Language Services | Professional Language Service Provider</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Kumar Language Services offers professional translation, editing, proofreading, language analysis, and content development services with accuracy and confidentiality.">
-
-  <!-- Open Graph (Social Preview) -->
-  <meta property="og:title" content="Kumar Language Services">
-  <meta property="og:description" content="Professional Language Service Provider offering translation, editing, proofreading, analysis, and content development.">
-  <meta property="og:type" content="website">
-
-  <!-- Preload Hero Image for Faster Load -->
-  <link rel="preload" as="image" href="images/hero-bg.jpg">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo">Kumar Language Services</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
-      </ul>
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><i class="fa-solid fa-language"></i> Kumar Language Services</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
-  </nav>
+
+    <ul class="nav-links">
+      <li><a class="active" href="index.html"><i class="fa fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
+      <li><a href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
+      <li><a class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
+    </ul>
+  </div>
 </header>
 
 <main>
 
-<!-- HERO SECTION -->
-<section class="hero" role="banner" aria-label="Professional Language Services">
+<section class="page-hero hero-gradient">
   <div class="container hero-content">
     <h1>Kumar Language Services</h1>
-    <h2>Professional Language Service Provider</h2>
-
-    <p>
-      Delivering accurate, reliable, and confidential language solutions
-      to support global communication needs.
+    <p class="hero-tagline">Professional Language Service Provider</p>
+    <p class="hero-description">
+      Accurate, confidential and globally reliable language solutions.
     </p>
 
     <div class="hero-buttons">
-      <a href="contact.html" class="btn-primary">Get a Quote</a>
-      <a href="contact.html" class="btn-secondary">Contact Me</a>
+      <a href="contact.html" class="btn btn-primary btn-glow">
+        <i class="fa fa-paper-plane"></i> Get a Quote
+      </a>
+      <a href="contact.html" class="btn btn-secondary">
+        <i class="fa fa-phone"></i> Contact Us
+      </a>
     </div>
   </div>
 </section>
 
-<section>
+<section class="services-section soft-bg">
   <div class="container">
-    <h2 class="section-title">Our Services</h2>
+    <h2 class="section-title">Our Core Services</h2>
+
     <div class="service-grid">
-      <div class="service-card">Translation Services</div>
-      <div class="service-card">Editing & Proofreading</div>
-      <div class="service-card">Language Analysis</div>
-      <div class="service-card">Content Development</div>
+      <div class="service-card">
+        <i class="fa fa-language service-icon"></i>
+        <h3>Translation</h3>
+        <p>Accurate, context-aware translations.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa fa-pen service-icon"></i>
+        <h3>Editing & Proofreading</h3>
+        <p>Refinement for clarity and correctness.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa fa-magnifying-glass service-icon"></i>
+        <h3>Linguistic Analysis</h3>
+        <p>Expert evaluation of language structure.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa fa-file-lines service-icon"></i>
+        <h3>Content Development</h3>
+        <p>Language-focused professional content.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="why-us">
-  <div class="container">
-    <h2 class="section-title">Why Choose Us</h2>
-    <div class="why-grid">
-      <div class="why-card">Accuracy</div>
-      <div class="why-card">Timely Delivery</div>
-      <div class="why-card">Confidentiality</div>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <div class="container contact-box">
-    <h2>Ready to Get Started?</h2>
-    <p>Contact us today for professional language solutions.</p>
-    <a href="contact.html" class="btn-primary">Contact Now</a>
+<section class="cta-section">
+  <div class="container cta-box">
+    <h2>Let’s Work Together</h2>
+    <p>Reliable language services built on trust and accuracy.</p>
+    <a href="contact.html" class="btn btn-primary btn-glow">
+      <i class="fa fa-envelope"></i> Contact Us
+    </a>
   </div>
 </section>
 
@@ -91,9 +96,20 @@
 
 <footer class="footer">
   <div class="container">
-    <p>© 2025 Kumar Language Services · All Rights Reserved</p>
+    © 2026 Kumar Language Services. All rights reserved.
   </div>
 </footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function toggleMenu(){
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
