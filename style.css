@@ -32,6 +32,16 @@ body {
 
 /* ================= NAVBAR ================= */
 
+/* Navbar logo image */
+.logo-img {
+    width: 40px;         /* adjust size as needed */
+    height: 40px;
+    object-fit: cover;   /* maintain aspect ratio */
+    border-radius: 50%;  /* makes it circular */
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .navbar {
     background: var(--white);
     border-bottom: 1px solid var(--border-light);
