@@ -5,16 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kumar Language Services | Professional Language Service Provider</title>
 <meta name="description" content="Professional translation, editing, proofreading and linguistic services.">
-
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
 <header class="navbar">
   <div class="container nav-container">
-    <div class="logo"><i class="fa-solid fa-language"></i> Kumar Language Services</div>
+    <div class="logo">
+      <img src="images/logo.png" alt="KLS Logo" class="logo-img">
+      <span class="logo-text">Kumar Language Services</span>
+    </div>
 
     <div class="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -30,22 +31,14 @@
 </header>
 
 <main>
-
 <section class="page-hero hero-gradient">
   <div class="container hero-content">
     <h1>Kumar Language Services</h1>
     <p class="hero-tagline">Professional Language Service Provider</p>
-    <p class="hero-description">
-      Accurate, confidential and globally reliable language solutions.
-    </p>
-
+    <p class="hero-description">Accurate, confidential and globally reliable language solutions.</p>
     <div class="hero-buttons">
-      <a href="contact.html" class="btn btn-primary btn-glow">
-        <i class="fa fa-paper-plane"></i> Get a Quote
-      </a>
-      <a href="contact.html" class="btn btn-secondary">
-        <i class="fa fa-phone"></i> Contact Us
-      </a>
+      <a href="contact.html" class="btn btn-primary btn-glow"><i class="fa fa-paper-plane"></i> Get a Quote</a>
+      <a href="contact.html" class="btn btn-secondary"><i class="fa fa-phone"></i> Contact Us</a>
     </div>
   </div>
 </section>
@@ -53,31 +46,11 @@
 <section class="services-section soft-bg">
   <div class="container">
     <h2 class="section-title">Our Core Services</h2>
-
     <div class="service-grid">
-      <div class="service-card">
-        <i class="fa fa-language service-icon"></i>
-        <h3>Translation</h3>
-        <p>Accurate, context-aware translations.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-pen service-icon"></i>
-        <h3>Editing & Proofreading</h3>
-        <p>Refinement for clarity and correctness.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-magnifying-glass service-icon"></i>
-        <h3>Linguistic Analysis</h3>
-        <p>Expert evaluation of language structure.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-file-lines service-icon"></i>
-        <h3>Content Development</h3>
-        <p>Language-focused professional content.</p>
-      </div>
+      <div class="service-card"><i class="fa fa-language service-icon"></i><h3>Translation</h3><p>Accurate, context-aware translations for global communication.</p></div>
+      <div class="service-card"><i class="fa fa-pen service-icon"></i><h3>Editing & Proofreading</h3><p>Meticulous refinement for clarity, flow, and linguistic correctness.</p></div>
+      <div class="service-card"><i class="fa fa-magnifying-glass service-icon"></i><h3>Linguistic Analysis</h3><p>Expert evaluation of language structure and contextual meaning.</p></div>
+      <div class="service-card"><i class="fa fa-file-lines service-icon"></i><h3>Content Development</h3><p>Language-focused professional content creation and optimization.</p></div>
     </div>
   </div>
 </section>
@@ -85,13 +58,10 @@
 <section class="cta-section">
   <div class="container cta-box">
     <h2>Let’s Work Together</h2>
-    <p>Reliable language services built on trust and accuracy.</p>
-    <a href="contact.html" class="btn btn-primary btn-glow">
-      <i class="fa fa-envelope"></i> Contact Us
-    </a>
+    <p>Reliable language services built on trust, accuracy, and professional ethics.</p>
+    <a href="contact.html" class="btn btn-primary btn-glow"><i class="fa fa-envelope"></i> Contact Us</a>
   </div>
 </section>
-
 </main>
 
 <footer class="footer">
@@ -103,15 +73,10 @@
   </div>
 </footer>
 
-<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
+<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 <script>
-function toggleMenu(){
-  document.querySelector('.nav-links').classList.toggle('open');
-}
+function toggleMenu(){ document.querySelector('.nav-links').classList.toggle('open'); }
 </script>
-
 </body>
 </html>
