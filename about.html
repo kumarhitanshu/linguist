@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | Kumar Language Services</title>
-<meta name="description" content="About Kumar Language Services – professional translation, editing, proofreading, and linguistic solutions.">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kumar Language Services</title>
+    <meta name="description" content="Learn about Kumar Language Services – our mission, professional values, and commitment to linguistic excellence.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="images/logo.png" alt="KLS Logo" class="logo-img">
-      <span class="logo-text">Kumar Language Services</span>
-    </div>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Kumar Language Services Logo" class="logo-img">
+            <span class="logo-text">Kumar Language Services</span>
+        </a>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
-            <li><a class="active" href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
-            <li><a href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
-            <li><a class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
-        </ul>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="btn btn-primary btn-nav" href="contact.html">Get a Quote</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
 <main>
-
-<section class="page-hero hero-gradient">
-    <div class="container hero-content">
-        <h1>About Us</h1>
-        <p class="hero-description">
-            Delivering accurate, ethical, and professionally crafted language solutions.
-        </p>
-    </div>
-</section>
-
-<section class="about-section soft-bg">
-    <div class="container about-split">
-
-        <div class="about-left">
-            <h2><i class="fa-solid fa-circle-info service-icon"></i> Who We Are</h2>
-            <p>
-                Kumar Language Services is a professional language service provider offering
-                high-quality translation, editing, proofreading, linguistic analysis, and
-                content development services. We support academic, institutional, and
-                professional communication with precision, clarity, and confidentiality.
-            </p>
-            <p>
-                Our work is guided by linguistic expertise, ethical practices, and a strong
-                commitment to accuracy across languages and domains.
+    <section class="page-hero hero-gradient">
+        <div class="container hero-content">
+            <h1 class="fade-in">About Us</h1>
+            <p class="hero-description">
+                Delivering accurate, ethical, and professionally crafted language solutions for a global audience.
             </p>
         </div>
+    </section>
 
-        <div class="about-right">
-            <h2><i class="fa-solid fa-bullseye service-icon"></i> Our Commitment</h2>
-            <ul>
-                <li>Accuracy and linguistic integrity</li>
-                <li>Confidential handling of all materials</li>
-                <li>Clear and professional communication</li>
-                <li>Timely and reliable delivery</li>
-                <li>Cultural and contextual accuracy</li>
-                <li>Domain-specific language expertise</li>
-                <li>Client-focused, tailored solutions</li>
-            </ul>
+    <section class="about-section soft-bg">
+        <div class="container about-split">
+
+            <div class="about-left">
+                <div class="icon-box"><i class="fa-solid fa-circle-info"></i></div>
+                <h2>Who We Are</h2>
+                <p>
+                    <strong>Kumar Language Services</strong> is a premier professional language service provider. We specialize in high-quality translation, meticulous editing, and expert linguistic analysis.
+                </p>
+                <p>
+                    Our mission is to support academic, institutional, and professional communication by bridging language gaps with precision, clarity, and absolute confidentiality.
+                </p>
+		<p>
+		With years of dedicated experience in the linguistic industry, we have established a reputation for delivering excellence to clients worldwide. Our team combines deep cultural knowledge with technical proficiency to ensure that every project meets the highest global standards.
+         	</p>   
+	    </div>
+
+            <div class="about-right">
+                <div class="icon-box"><i class="fa-solid fa-bullseye"></i></div>
+                <h2>Our Commitment</h2>
+                <ul class="commitment-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Accuracy and linguistic integrity</li>
+                    <li><i class="fa-solid fa-lock"></i> Confidential handling of all materials</li>
+                    <li><i class="fa-solid fa-comments"></i> Clear and professional communication</li>
+                    <li><i class="fa-solid fa-clock"></i> Timely and reliable delivery</li>
+                    <li><i class="fa-solid fa-globe"></i> Cultural and contextual accuracy</li>
+                    <li><i class="fa-solid fa-award"></i> Domain-specific language expertise</li>
+                </ul>
+            </div>
+
         </div>
-
-    </div>
-</section>
-
+    </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    © 2026 Kumar Language Services. All rights reserved. <br>
-    <i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com | 
-    <i class="fa-solid fa-phone"></i> +91-9311746393 | 
-    <i class="fa-solid fa-location-dot"></i> East Delhi, Delhi, India - 110092
-  </div>
+    <div class="container footer-grid">
+        <div class="footer-info">
+            <p>© 2026 Kumar Language Services. All rights reserved.</p>
+            <div class="footer-contact">
+                <span><i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +91 93117 46393</span>
+                <span><i class="fa-solid fa-location-dot"></i> East Delhi, India - 110092</span>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 </a>
 
 <script>
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('open');
-}
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('open');
+        document.querySelector('.hamburger').classList.toggle('active');
+    }
 </script>
 
 </body>
