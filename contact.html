@@ -1,128 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | Kumar Language Services</title>
-<meta name="description" content="Contact Kumar Language Services for professional translation, editing, proofreading, and linguistic services.">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Kumar Language Services</title>
+    <meta name="description" content="Request a quote for professional translation, editing, and linguistic services. Professional response within 24 hours.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="images/logo.png" alt="KLS Logo" class="logo-img">
-      <span class="logo-text">Kumar Language Services</span>
-    </div>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Kumar Language Services Logo" class="logo-img">
+            <span class="logo-text">Kumar Language Services</span>
+        </a>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
 
-        <ul class="nav-links">
-          <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
-          <li><a href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
-          <li><a href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
-          <li><a class="active btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
-        </ul>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="active btn btn-primary btn-nav" href="contact.html">Get a Quote</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
 <main>
-
-<section class="page-hero hero-gradient">
-    <div class="container hero-content">
-        <h1>Contact Us</h1>
-        <p class="hero-description">
-            Share your project details and receive a professional response within one business day.
-        </p>
-    </div>
-</section>
-
-<section class="contact-section soft-bg">
-    <div class="container contact-grid">
-
-        <!-- CONTACT INFO -->
-        <div class="contact-info">
-            <h2><i class="fa-solid fa-address-card service-icon"></i> Reach Us</h2>
-            <p><i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +91-9311746393</p>
-            <p><i class="fa-solid fa-location-dot"></i> East Delhi, Delhi, India - 110092</p>
-            <p class="contact-note">All submissions are handled with strict confidentiality.</p>
+    <section class="page-hero hero-gradient">
+        <div class="container hero-content">
+            <h1 class="fade-in">Get a Quote</h1>
+            <p class="hero-description">
+                Partner with us for precision-driven linguistic solutions. We typically respond to project inquiries within one business day.
+            </p>
         </div>
+    </section>
 
-        <!-- CONTACT FORM -->
-        <div class="contact-form-box">
-            <h2><i class="fa-solid fa-file-signature service-icon"></i> Project Inquiry</h2>
+    <section class="contact-section soft-bg">
+        <div class="container contact-grid">
 
-            <form class="contact-form"
-                  action="https://formsubmit.co/kumarlanguageservices@gmail.com"
-                  method="POST"
-                  enctype="multipart/form-data">
-
-                <input type="hidden" name="_subject" value="New Project Inquiry – Kumar Language Services">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-
-                <div class="form-group">
-                    <label>Full Name *</label>
-                    <input type="text" name="name" required>
+            <div class="contact-info">
+                <div class="icon-box"><i class="fa-solid fa-address-card"></i></div>
+                <h2>Reach Us</h2>
+                <div class="commitment-list">
+                    <li><i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 93117 46393</li>
+                    <li><i class="fa-solid fa-location-dot"></i> East Delhi, India - 110092</li>
                 </div>
-
-                <div class="form-group">
-                    <label>Email Address *</label>
-                    <input type="email" name="email" required>
+                <div class="contact-card-footer" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--bg-soft);">
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        <i class="fa-solid fa-shield-halved"></i> <strong>Strict Confidentiality:</strong> All shared documents and project details are protected by our professional ethics and privacy policy.
+                    </p>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label>Service Required *</label>
-                    <select name="service" required>
-                        <option value="">Select Service</option>
-                        <option>Translation</option>
-                        <option>Editing & Proofreading</option>
-                        <option>Linguistic Analysis</option>
-                        <option>Content Development</option>
-                    </select>
-                </div>
+            <div class="contact-form-box">
+                <div class="icon-box"><i class="fa-solid fa-file-signature"></i></div>
+                <h2>Project Inquiry</h2>
 
-                <div class="form-group">
-                    <label>Project Details *</label>
-                    <textarea name="message" rows="5" required></textarea>
-                </div>
+                <form class="contact-form" action="https://formsubmit.co/kumarlanguageservices@gmail.com" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New Project Inquiry – Kumar Language Services">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://kumarhitanshu.github.io/my-website/index.html">
 
-                <div class="form-group">
-                    <label>Attach File (optional)</label>
-                    <input type="file" name="attachment" accept=".pdf,.doc,.docx">
-                </div>
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" placeholder="John Doe" required>
+                    </div>
 
-                <button type="submit" class="btn btn-primary btn-glow btn-submit">Submit Inquiry</button>
-            </form>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Service Required *</label>
+                        <select name="service" required>
+                            <option value="">Select a Service</option>
+                            <option>Translation</option>
+                            <option>Editing & Proofreading</option>
+                            <option>Linguistic Analysis</option>
+                            <option>Content Development</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Details *</label>
+                        <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Attach File (Optional)</label>
+                        <input type="file" name="attachment" accept=".pdf,.doc,.docx" style="padding: 8px;">
+                        <small style="color: var(--text-muted);">Accepted formats: PDF, DOC, DOCX</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; justify-content: center; background: var(--brand-primary); color: white;">
+                        <i class="fa fa-paper-plane"></i> Submit Inquiry
+                    </button>
+                </form>
+            </div>
+
         </div>
-
-    </div>
-</section>
-
+    </section>
 </main>
 
 <footer class="footer">
-    <div class="container">
-        © 2026 Kumar Language Services. All rights reserved. <br>
-        <i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com | 
-        <i class="fa-solid fa-phone"></i> +91-9311746393 | 
-        <i class="fa-solid fa-location-dot"></i> East Delhi, Delhi, India - 110092
+    <div class="container footer-grid">
+        <div class="footer-info">
+            <p>© 2026 Kumar Language Services. All rights reserved.</p>
+            <div class="footer-contact">
+                <span><i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +91 93117 46393</span>
+            </div>
+        </div>
     </div>
 </footer>
 
-<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 <script>
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('open');
-}
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('open');
+        document.querySelector('.hamburger').classList.toggle('active');
+    }
 </script>
 
 </body>
