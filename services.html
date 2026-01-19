@@ -1,68 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Kumar Language Services</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Kumar Language Services</title>
+    <meta name="description" content="Explore our professional language services including translation, editing, linguistic analysis, and content development.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 <body>
 
 <header class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="images/logo.png" alt="KLS Logo" class="logo-img">
-      <span class="logo-text">Kumar Language Services</span>
-    </div>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Kumar Language Services Logo" class="logo-img">
+            <span class="logo-text">Kumar Language Services</span>
+        </a>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
 
-    <ul class="nav-links">
-      <li><a href="index.html"><i class="fa fa-house"></i> Home</a></li>
-      <li><a href="about.html"><i class="fa fa-circle-info"></i> About</a></li>
-      <li><a class="active" href="services.html"><i class="fa fa-briefcase"></i> Services</a></li>
-      <li><a class="btn btn-primary btn-nav" href="contact.html"><i class="fa fa-envelope"></i> Get a Quote</a></li>
-    </ul>
-  </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="services.html">Services</a></li>
+                <li><a class="btn btn-primary btn-nav" href="contact.html">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<section class="page-hero hero-gradient">
-  <div class="container hero-content">
-    <h1>Our Services</h1>
-    <p class="hero-description">Professional language solutions tailored to your needs.</p>
-  </div>
-</section>
+<main>
+    <section class="page-hero hero-gradient">
+        <div class="container hero-content">
+            <h1 class="fade-in">Our Services</h1>
+            <p class="hero-tagline">Precision. Clarity. Reliability.</p>
+            <p class="hero-description">Comprehensive language solutions designed for academic, corporate, and institutional excellence.</p>
+        </div>
+    </section>
 
-<section class="services-section soft-bg">
-  <div class="container">
-    <div class="service-grid">
-      <div class="service-card"><i class="fa fa-language service-icon"></i><h3>Translation</h3></div>
-      <div class="service-card"><i class="fa fa-pen service-icon"></i><h3>Editing & Proofreading</h3></div>
-      <div class="service-card"><i class="fa fa-magnifying-glass service-icon"></i><h3>Linguistic Analysis</h3></div>
-      <div class="service-card"><i class="fa fa-file-lines service-icon"></i><h3>Content Development</h3></div>
-    </div>
-  </div>
-</section>
+    <section class="services-section soft-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-language"></i></div>
+                    <h3>Translation</h3>
+                    <p>High-accuracy translation services across multiple domains.</p>
+                    <ul class="commitment-list" style="font-size: 0.9rem; margin-top: 15px;">
+                        <li><i class="fa-solid fa-check"></i> Document Translation</li>
+                        <li><i class="fa-solid fa-check"></i> Academic Localization</li>
+                        <li><i class="fa-solid fa-check"></i> Technical Manuals</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-pen-nib"></i></div>
+                    <h3>Editing & Proofreading</h3>
+                    <p>Refining your voice for professional and academic impact.</p>
+                    <ul class="commitment-list" style="font-size: 0.9rem; margin-top: 15px;">
+                        <li><i class="fa-solid fa-check"></i> Grammar & Syntax</li>
+                        <li><i class="fa-solid fa-check"></i> Style Consistency</li>
+                        <li><i class="fa-solid fa-check"></i> Clarity Enhancement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-magnifying-glass-chart"></i></div>
+                    <h3>Linguistic Analysis</h3>
+                    <p>Deep evaluation of language use and contextual meaning.</p>
+                    <ul class="commitment-list" style="font-size: 0.9rem; margin-top: 15px;">
+                        <li><i class="fa-solid fa-check"></i> Semantic Analysis</li>
+                        <li><i class="fa-solid fa-check"></i> Tone & Register Audit</li>
+                        <li><i class="fa-solid fa-check"></i> Cultural Review</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-file-signature"></i></div>
+                    <h3>Content Development</h3>
+                    <p>Crafting language-focused professional content.</p>
+                    <ul class="commitment-list" style="font-size: 0.9rem; margin-top: 15px;">
+                        <li><i class="fa-solid fa-check"></i> Report Writing</li>
+                        <li><i class="fa-solid fa-check"></i> Educational Materials</li>
+                        <li><i class="fa-solid fa-check"></i> SEO Copywriting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-box">
+            <h2>Need a Tailored Solution?</h2>
+            <p>Every project is unique. We provide customized language consulting to meet your specific goals.</p>
+            <a href="contact.html" class="btn btn-primary btn-glow">Request Custom Quote</a>
+        </div>
+    </section>
+</main>
 
 <footer class="footer">
-  <div class="container">
-    © 2026 Kumar Language Services. All rights reserved. <br>
-    <i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com | 
-    <i class="fa-solid fa-phone"></i> +91-9311746393 | 
-    <i class="fa-solid fa-location-dot"></i> East Delhi, Delhi, India - 110092
-  </div>
+    <div class="container footer-grid">
+        <div class="footer-info">
+            <p>© 2026 Kumar Language Services. All rights reserved.</p>
+            <div class="footer-contact">
+                <span><i class="fa-solid fa-envelope"></i> kumarlanguageservices@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +91 93117 46393</span>
+                <span><i class="fa-solid fa-location-dot"></i> Delhi, India - 110092</span>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/919311746393" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 </a>
 
 <script>
-function toggleMenu(){document.querySelector('.nav-links').classList.toggle('open');}
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('open');
+        document.querySelector('.hamburger').classList.toggle('active');
+    }
 </script>
 
 </body>
